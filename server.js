@@ -224,7 +224,7 @@ app.delete('/api/assignments/:id', authMiddleware, async (req, res) => {
 
 // Basic route
 app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to Resourcely API' });
+  res.send('Welcome to Resourcely API');
 });
 
 // Start server
